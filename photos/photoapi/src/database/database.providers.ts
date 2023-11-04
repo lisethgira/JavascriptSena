@@ -5,7 +5,7 @@ export const databaseProviders = [
     provide: 'DATA_SOURCE',
     useFactory: async () => {
       const dataSource = new DataSource({
-        type: 'mysql',
+        type: 'postgres',
         host: 'db.jmdncdumoxldmmrkzhii.supabase.co',
         port: 5432,
         username: 'postgres',

@@ -9,6 +9,10 @@ export class PhotoService {
     private photoRepository: Repository<Photo>,
   ) {}
 
+  async create(photo: Photo) {
+    return this.photoRepository.save(photo);
+  }
+
   async findAll(): Promise<Photo[]> {
     return this.photoRepository.find();
   }
