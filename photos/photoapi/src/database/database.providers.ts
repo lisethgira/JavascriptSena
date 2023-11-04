@@ -6,11 +6,11 @@ export const databaseProviders = [
     useFactory: async () => {
       const dataSource = new DataSource({
         type: 'postgres',
-        host: 'db.jmdncdumoxldmmrkzhii.supabase.co',
+        host: 'db.jfwvoizocakyjfzmmshr.supabase.co',
         port: 5432,
         username: 'postgres',
         password: 'contrasenaSENA123',
-        database: 'photos',
+        database: 'postgres',
         entities: [__dirname + '/../**/*.entity{.ts,.js}'],
         synchronize: true,
       });
